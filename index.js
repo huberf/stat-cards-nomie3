@@ -1,14 +1,11 @@
 //Getting all dependencies
-var express = require('express.io');
+var express = require('express');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var app = express();
 var nodemailer = require('nodemailer');
 var bodyParser = require('body-parser');
 var http = require('http').Server(app);
-var io = require('socket.io')(http);
-
-app.http().io()
 
 //Setting up the port to listen to
 app.set('port', (process.env.PORT || 5000));
